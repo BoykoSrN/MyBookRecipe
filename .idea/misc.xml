@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.158" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/drawable/bottom_bar_menu_selector.xml" value="0.158" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/drawable/ic_add_stage_24dp.xml" value="0.158" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/drawable/ic_baseline_food_400dp.xml" value="0.158" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/drawable/ic_baseline_restaurant_24.xml" value="0.158" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/drawable/ic_baseline_star_rate_24.xml" value="0.158" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/drawable/ic_bottom_favorite_24dp.xml" value="0.158" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/drawable/ic_favorite_24dp.xml" value="0.158" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/drawable/ic_favorite_border_24dp.xml" value="0.158" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/drawable/ic_favorite_chek_24dp.xml" value="0.158" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/drawable/ic_filter_24dp.xml" value="0.158" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/drawable/ic_food_240dp.xml" value="0.158" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/drawable/ic_home_24dp.xml" value="0.158" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/drawable/ic_launcher_app_background.xml" value="0.158" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/drawable/ic_launcher_background.xml" value="0.158" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/drawable/ic_ok_24dp.xml" value="0.158" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/drawable/ic_option_24dp.xml" value="0.158" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/drawable/ic_plus_48dp.xml" value="0.158" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/drawable/ic_search_24dp.xml" value="0.158" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/layout/app_activity.xml" value="0.264" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/layout/card_layout.xml" value="0.264" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/layout/card_stage_layout.xml" value="0.264" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/layout/card_stage_view_layout.xml" value="0.264" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/layout/filter_fragment_switch.xml" value="0.264" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/layout/fragment_favorite.xml" value="0.25" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/layout/fragment_feed.xml" value="0.2" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/layout/fragment_filter.xml" value="0.19817708333333334" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/layout/fragment_recipe_create.xml" value="0.264" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/layout/fragment_recipe_view.xml" value="0.19817708333333334" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/layout/fragment_stage_create.xml" value="0.19817708333333334" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/menu/action_bar_menu.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/menu/bottom_menu.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/menu/recipe_menu.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/menu/stage_menu.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/bsnfo/AndroidStudioProjects/BookRecipe/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.158" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
