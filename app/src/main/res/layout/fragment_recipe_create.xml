@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+    android:theme="@style/ThemeOverlay.AppCompat.DayNight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleViewStart"
+            android:layout_width="6dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:text="@string/title"
+            android:textSize="11sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/titleEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/titleViewStart"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/titleEditText"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:hint="@string/title"
+            android:inputType="text"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toBottomOf="@id/titleViewStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/titleViewStart"
+            app:layout_constraintTop_toBottomOf="@id/titleTextView" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/categoryViewStart"
+            android:layout_width="6dp"
+            android:layout_height="0dp"
+
+            android:contentDescription="@string/category"
+            app:layout_constraintBottom_toBottomOf="@id/categoryTextViewContent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/categoryTextViewCaption" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/categoryTextViewCaption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@color/white"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:text="@string/category"
+            android:textSize="11sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/categoryTextViewContent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/categoryViewStart"
+            app:layout_constraintTop_toBottomOf="@id/titleViewStart"
+            app:layout_goneMarginTop="6dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/categoryTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:text="@string/category"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/categoryViewStart"
+            app:layout_constraintTop_toBottomOf="@id/categoryTextViewCaption"
+            tools:text="Русская" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/stageTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:padding="6dp"
+            android:text="@string/cooking"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/categoryTextViewContent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/stageAddButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/add_stage"
+            android:src="@drawable/ic_add_stage_24dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintBottom_toBottomOf="@id/stageTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/stageTextView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/stageRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stageTextView"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/card_stage_layout"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/buttonCancel"
+            app:layout_constraintTop_toBottomOf="@id/stageRecyclerView"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            app:layout_constraintStart_toEndOf="@id/buttonSave"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stageRecyclerView"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

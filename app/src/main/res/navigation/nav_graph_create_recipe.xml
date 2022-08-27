@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_create_recipe"
+    app:startDestination="@id/recipeCreateFragment2">
+
+    <fragment
+        android:id="@+id/recipeCreateFragment2"
+        android:name="ru.netology.bookrecipe.ui.RecipeCreateFragment"
+        android:label="@string/recipe_creation" >
+        <action
+            android:id="@+id/action_recipeCreateFragment2_to_filterSetupFragment"
+            app:destination="@id/filterSetupFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_recipeCreateFragment2_to_stageCreateFragment"
+            app:destination="@id/stageCreateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filterSetupFragment"
+        android:name="ru.netology.bookrecipe.ui.FilterSetupFragment"
+        android:label="@string/category_selection" >
+        <action
+            android:id="@+id/action_filterSetupFragment_to_recipeCreateFragment2"
+            app:destination="@id/recipeCreateFragment2"
+            app:popUpTo="@id/recipeCreateFragment2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/stageCreateFragment"
+        android:name="ru.netology.bookrecipe.ui.StageCreateFragment"
+        android:label="@string/сreating_a_step" >
+        <action
+            android:id="@+id/action_stageCreateFragment_to_recipeCreateFragment2"
+            app:destination="@id/recipeCreateFragment2"
+            app:popUpTo="@id/recipeCreateFragment2"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

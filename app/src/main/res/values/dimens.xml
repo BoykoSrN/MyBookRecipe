@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="commonSpacing">16dp</dimen>
+    <dimen name="textSpacing">8dp</dimen>
+    <dimen name="recipeAvatarSize">48dp</dimen>
+    <dimen name="iconButtonMinSize">48dp</dimen>
+    <dimen name="buttonCreateMargin">16dp</dimen>
+    <dimen name="titleEditTextSizeNorm">32sp</dimen>
+    <dimen name="titleEditTextSizeSmall">20sp</dimen>
+    <dimen name="marginNorm">6dp</dimen>
+</resources>

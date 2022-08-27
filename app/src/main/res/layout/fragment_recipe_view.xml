@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.MaterialComponents.DayNight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleViewStart"
+            android:layout_width="6dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:text="@string/title"
+            android:textSize="11sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/titleEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/titleViewStart"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleEditText"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:hint="@string/title"
+            android:inputType="text"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toBottomOf="@id/titleViewStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/titleViewStart"
+            app:layout_constraintTop_toBottomOf="@id/titleTextView" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/categoryViewStart"
+            android:layout_width="6dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/category"
+            app:layout_constraintBottom_toBottomOf="@id/categoryTextViewContent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/categoryTextViewCaption" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/categoryTextViewCaption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@color/white"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:text="@string/category"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/categoryTextViewContent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/categoryViewStart"
+            app:layout_constraintTop_toBottomOf="@id/titleViewStart"
+            app:layout_goneMarginTop="6dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/categoryTextViewContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:text="@string/category"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/categoryViewStart"
+            app:layout_constraintTop_toBottomOf="@id/categoryTextViewCaption"
+            tools:text="Русская" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/stageTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.MaterialComponents.DayNight"
+            android:layout_marginTop="6dp"
+            android:padding="6dp"
+            android:text="@string/cooking"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/categoryTextViewContent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/stageRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stageTextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:listitem="@layout/card_stage_view_layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

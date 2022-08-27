@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_bottom_menu"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="ru.netology.bookrecipe.ui.FeedFragment"
+        android:label="@string/app_name">
+        <action
+            android:id="@+id/action_feedFragment3_to_nav_graph_create_recipe3"
+            app:destination="@id/nav_graph_create_recipe"
+            app:launchSingleTop="false" />
+        <action
+            android:id="@+id/action_feedFragment3_to_recipeViewFragment"
+            app:destination="@id/recipeViewFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/filterFragmentSwitch"
+        android:name="ru.netology.bookrecipe.ui.FilterFragment"
+        android:label="@string/category" />
+
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="ru.netology.bookrecipe.ui.FavoriteFragment"
+        android:label="@string/favorites" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_nav_graph_create_recipe"
+            app:destination="@id/nav_graph_create_recipe" />
+        <action
+            android:id="@+id/action_favoriteFragment_to_recipeViewFragment"
+            app:destination="@id/recipeViewFragment" />
+    </fragment>
+
+    <include app:graph="@navigation/nav_graph_create_recipe" />
+
+    <fragment
+        android:id="@+id/recipeViewFragment"
+        android:name="ru.netology.bookrecipe.ui.RecipeViewFragment"
+        android:label="@string/recipe_view" />
+
+</navigation>
